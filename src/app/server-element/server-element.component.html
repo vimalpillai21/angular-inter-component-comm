@@ -5,10 +5,11 @@
             <strong *ngIf="element.type === 'server'" style="color: red">{{ element.content }}</strong>
             <em *ngIf="element.type === 'blueprint'">{{ element.content }}</em>
           </p> -->
-          <p>
+          <!-- <p>
             <strong  style="color: red">{{ element.type }}</strong><br>
             <em>{{ element.content }}</em>
-          </p>
+          </p> -->
+          <ng-content></ng-content>
         </div>
       </div>
   
